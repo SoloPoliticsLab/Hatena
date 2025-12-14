@@ -1,0 +1,154 @@
+/* <system section="theme" selected="6802418398435013379"> */
+@import "https://usercss.blog.st-hatena.com/-/theme/6802418398435013379.css?version=18464b42a4cbf19d3d866ae85a4b7d315eb939b1";
+/* </system> */
+
+/* <system section="background" selected="default"> */
+/* default */
+/* </system> */
+
+
+
+.table_design01 {*/タイル風
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 700px;
+}
+.table_design01 th, .table_design01 td {
+  border: 2px solid #fff;
+  background-color: #e6f1f6;
+  padding: 1em;
+}
+.table_design01 th {
+  background-color: #4d9bc1;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  width: 20%;
+  min-width: 4em;
+}
+
+/* 文字色の変更 */
+body {
+	color: #333333; /* 文字色 */
+}
+/* 背景色の変更 */
+body {
+	background-color: #FFFFFF; /* 背景色 */
+}
+/*文字(太字推奨)シャドウ*/
+.shadow {
+	text-shadow: 1px 1px 2px silver;
+	font-weight: bold;
+}
+.entry-content h3 {
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+  padding: 0.5em 0;
+}
+
+/*--------囲み黒枠BOX--------*/
+.box {
+    --bg-gradient: linear-gradient(#333 0 100%);
+    margin: 0.5rem;
+    padding: 1.5rem;
+    background-image:
+        var(--bg-gradient),
+        var(--bg-gradient),
+        var(--bg-gradient),
+        var(--bg-gradient);
+    background-repeat: no-repeat;
+    background-size: 100% 2px, 2px 100%, 100% 2px, 2px 100%;
+    background-position: left top 5px, right 5px top, left bottom 5px, left 5px top;
+}
+.box p {
+    line-height: 1.5;
+    color: #222;
+
+}
+/*---- ずらし影BOX --------*/
+.box-design9 {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: transparent;
+  border: 2px solid #343434;
+  position: relative;
+}
+.box-design9::after {
+  content: '';
+  background-color: #e1eef5;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -7px;
+  left: 7px;
+  z-index: -1;
+}
+/*--------白囲みBOX--------*/
+.normal-box3{ 
+	margin: 1em 0;
+	padding: 1em;
+	background-color: white;
+	box-shadow: 0 3px 4px rgba(0, 0, 0, 0.4);
+}
+.normal-box3 p{
+	margin: 0;
+	padding: 0;
+}
+/*-------角まるBOXX--------*/
+.box-design1 {
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #4c9ac0;
+  border-radius: 20px;
+}
+/*-------ノートBOX --------*/
+.box-design6 {
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #4c9ac0;
+  position: relative;
+}
+.box-design6 p {
+  background-image: linear-gradient(90deg, rgba(237, 119, 128, 0) 0%, rgba(237, 119, 128, 0) 50%, #fff 0%, #fff 100%), linear-gradient(180deg, rgba(237, 119, 128, 0) 0%, rgba(237, 119, 128, 0) 95%, #4c9ac0 100%);
+    background-size: 8px 100%, 100% 2.5em;
+    line-height: 2.5;
+    margin: 0;
+
+
+}
+.list-design {
+  border-top: 2px solid #99bdde;
+  border-bottom: 2px solid #99bdde;
+  list-style-type: disc;
+  margin: 20px 0;
+  padding: 11px 20px 20px 35px;
+}
+.list-design li {
+  margin-top: 10px;
+}
+}
+
+/*--------------------------Original-----------------------------------*/
+
+.table_design01 {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 700px;
+}
+.table_design01 th, .table_design01 td {
+  border: 2px solid #fff;
+  background-color: #e6f1f6;
+  padding: 1em;
+}
+.table_design01 th {
+  background-color: #4d9bc1;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  width: 20%;
+  min-width: 4em;
+}
+
+/*@import で外部 CSS を読み込む
+
+

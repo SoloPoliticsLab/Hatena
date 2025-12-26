@@ -6,149 +6,148 @@
 /* default */
 /* </system> */
 
+/*
+  
+    コメント
+
+*/
+
+/*コメント */
+/* Document
+   ========================================================================== */
 
 
-.table_design01 {*/タイル風
-  border-collapse: collapse;
-  width: 100%;
-  max-width: 700px;
-}
-.table_design01 th, .table_design01 td {
-  border: 2px solid #fff;
-  background-color: #e6f1f6;
-  padding: 1em;
-}
-.table_design01 th {
-  background-color: #4d9bc1;
-  color: #fff;
-  font-weight: bold;
-  text-align: center;
-  width: 20%;
-  min-width: 4em;
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: #F3F3F3;
+	font-family: 'Outfit','BIZ UDPGothic',sans-serif;
+	/*font-family: 'Outfit', 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif;*/
+	font-variant-numeric: tabular-nums;
+	line-height: 1.8;
+	letter-spacing: .1em;
+	font-size: 1rem;
+	color: #666;
 }
 
-/* 文字色の変更 */
-body {
-	color: #333333; /* 文字色 */
-}
-/* 背景色の変更 */
-body {
-	background-color: #FFFFFF; /* 背景色 */
-}
-/*文字(太字推奨)シャドウ*/
-.shadow {
-	text-shadow: 1px 1px 2px silver;
-	font-weight: bold;
+
+
+.entry-content h3 {/*見出し(大)下破線*/
+	border: none;
+	background: none;
 }
 .entry-content h3 {
-  border-top: 2px solid #333;
-  border-bottom: 2px solid #333;
-  padding: 0.5em 0;
+	border-bottom: 4px dashed #6ad1c8;
+	padding: 0.5em 0;
 }
 
-/*--------囲み黒枠BOX--------*/
-.box {
-    --bg-gradient: linear-gradient(#333 0 100%);
-    margin: 0.5rem;
-    padding: 1.5rem;
-    background-image:
-        var(--bg-gradient),
-        var(--bg-gradient),
-        var(--bg-gradient),
-        var(--bg-gradient);
-    background-repeat: no-repeat;
-    background-size: 100% 2px, 2px 100%, 100% 2px, 2px 100%;
-    background-position: left top 5px, right 5px top, left bottom 5px, left 5px top;
+
+.entry-content blockquote {/*引用 */
+	position: relative;
+	padding: 5px 12px 5px 56px;
+	box-sizing: border-box;
+	font-style: italic;
+	color: #464646;
+	background: #f0f7ff;
+}
+
+.entry-content blockquote:before{
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	width: 36px;
+	height: 36px;
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	text-align: center;
+	content: "\f10d";
+	font-family: "Font Awesome 5 Free";
+	color: #FFF;
+	font-size: 20px;
+	line-height: 36px;
+	background: #6ad1c8;
+	border-radius: 50%;
+	font-weight: 900;
+}
+
+.entry-content blockquote p {
+	position: relative;
+	padding: 0;
+	margin: 10px 0;
+	z-index: 3;
+	line-height: 1.7;
+}
+
+.entry-content blockquote cite {
+	display: block;
+	text-align: right;
+	color: #888888;
+	font-size: 0.9em;
+}
+
+.box {/*囲み黒枠BOX*/
+	--bg-gradient: linear-gradient(#333 0 100%);
+	margin: 0.5rem;
+	padding: 1.5rem;
+	background-image:
+	var(--bg-gradient),
+	var(--bg-gradient),
+	var(--bg-gradient),
+	var(--bg-gradient);
+	background-repeat: no-repeat;
+	background-size: 100% 2px, 2px 100%, 100% 2px, 2px 100%;
+	background-position: left top 5px, right 5px top, left bottom 5px, left 5px top;
 }
 .box p {
-    line-height: 1.5;
-    color: #222;
+	line-height: 1.5;
+	color: #;
+}
 
-}
-/*---- ずらし影BOX --------*/
-.box-design9 {
-  margin: 20px auto;
-  padding: 20px;
-  background-color: transparent;
-  border: 2px solid #343434;
-  position: relative;
-}
-.box-design9::after {
-  content: '';
-  background-color: #e1eef5;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: -7px;
-  left: 7px;
-  z-index: -1;
-}
-/*--------白囲みBOX--------*/
-.normal-box3{ 
+.normal-box3{/*白立体角BOX*/ 
 	margin: 1em 0;
 	padding: 1em;
 	background-color: white;
-	box-shadow: 0 3px 4px rgba(0, 0, 0, 0.4);
+/*
+box-shadow: 0 3px 4px rgba(0, 0, 0, 0.4);
+*/
+	box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
 }
 .normal-box3 p{
 	margin: 0;
 	padding: 0;
 }
-/*-------角まるBOXX--------*/
-.box-design1 {
-  margin: 20px auto;
-  padding: 20px;
-  border: 2px solid #4c9ac0;
-  border-radius: 20px;
-}
-/*-------ノートBOX --------*/
-.box-design6 {
-  margin: 20px auto;
-  padding: 20px;
-  border: 2px solid #4c9ac0;
-  position: relative;
-}
-.box-design6 p {
-  background-image: linear-gradient(90deg, rgba(237, 119, 128, 0) 0%, rgba(237, 119, 128, 0) 50%, #fff 0%, #fff 100%), linear-gradient(180deg, rgba(237, 119, 128, 0) 0%, rgba(237, 119, 128, 0) 95%, #4c9ac0 100%);
-    background-size: 8px 100%, 100% 2.5em;
-    line-height: 2.5;
-    margin: 0;
 
-
+.normal-box4{/*白囲み立体角丸BOX*/
+	padding: 1rem;
+	border-radius: 0.0rem;/*角を半径0.5remの丸みで角丸にする*/
+	box-shadow: 0 0 5px #353535, 10px 10px 0 #efefef; /*周囲に暗い光の影/ハイライトシャドウで浮き感*/
+	background-color: white;
+	color: #353535;
 }
-.list-design {
-  border-top: 2px solid #99bdde;
-  border-bottom: 2px solid #99bdde;
-  list-style-type: disc;
-  margin: 20px 0;
-  padding: 11px 20px 20px 35px;
-}
-.list-design li {
-  margin-top: 10px;
-}
+.normal-box4 p{
+	margin: 0;
+	padding: 0;
 }
 
-/*--------------------------Original-----------------------------------*/
-
-.table_design01 {
-  border-collapse: collapse;
-  width: 100%;
-  max-width: 700px;
-}
-.table_design01 th, .table_design01 td {
-  border: 2px solid #fff;
-  background-color: #e6f1f6;
-  padding: 1em;
-}
-.table_design01 th {
-  background-color: #4d9bc1;
-  color: #fff;
-  font-weight: bold;
-  text-align: center;
-  width: 20%;
-  min-width: 4em;
+.box-design6 { /*ノート風BOX */
+	margin: 20px auto;
+	padding: 20px;
+	border: 2px solid #4c9ac0;
+	position: relative;
 }
 
-/*@import で外部 CSS を読み込む
-
+.box14{ /*布風BOX*/
+	padding: 0.2em 0.5em;
+	margin: 20px 0;
+	background: #6ad1c8;
+	box-shadow: 0px 0px 0px 10px #6ad1c8;
+	border: dashed 2px white;
+}
+.box14 p {
+	margin: 0; 
+	padding: 0;
+}
 

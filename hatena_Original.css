@@ -1,21 +1,13 @@
-/* <system section="theme" selected="6802418398435013379"> */
-@import "https://usercss.blog.st-hatena.com/-/theme/6802418398435013379.css?version=18464b42a4cbf19d3d866ae85a4b7d315eb939b1";
-/* </system> */
+/*コメント */
+/* Document
+   ========================================================================== */
 
-/* <system section="background" selected="default"> */
-/* default */
-/* </system> */
 
 /*
   
     コメント
 
 */
-
-/*コメント */
-/* Document
-   ========================================================================== */
-
 
 body{
 	margin: 0;
@@ -150,4 +142,5 @@ box-shadow: 0 3px 4px rgba(0, 0, 0, 0.4);
 	margin: 0; 
 	padding: 0;
 }
+
 
